@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <h1 class="center"> <span class="textn">live Covid Tracker</span></h1>
+
+    <div class="center">
+        <h1><span class="textn">All Cases in India</span></h1>
+        <table class="tg">
+            <thead>
+                <tr>
+                    <th class="tg-0pky bor">activeCases</th>
+                    <th class="tg-0pky bor">activeCasesNew</th>
+                    <th class="tg-0pky bor">recovered</th>
+                    <th class="tg-0lax bor">recoveredNew</th>
+                    <th class="tg-73oq bor">deaths</th>
+                    <th class="tg-0lax bor">deathsNew</th>
+                    <th class="tg-0lax bor">previousDayTests</th>
+                    <th class="tg-0lax bor">totalCases</th>
+                </tr>
+            </thead>
+            <tbody class="bor">
+                <tr>
+                    <td class="tg-0pky bor" id="ac"></td>
+                    <td class="tg-0pky bor" id="acn"></td>
+                    <td class="tg-0pky bor" id="rc"></td>
+                    <td class="tg-0lax bor" id="rcn"></td>
+                    <td class="tg-0lax bor" id="dt"></td>
+                    <td class="tg-0lax bor" id="dtn"></td>
+                    <td class="tg-0lax bor" id="pdt"></td>
+                    <td class="tg-0lax bor" id="tc"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="center">
+        <h1><span class="textn">Check State Wise</span></h1>
+
+        <form class="for">
+            <label for="state1"><span class="textn">Choos State:</span></label>
+            <select id="state1" onchange="state()">
+                <option selected>Choos State</option>
+                <option value="0">Andaman and Nicobar Islands</option>
+                <option value="1">Andhra Pradesh</option>
+                <option value="2">Arunachal Pradesh</option>
+                <option value="3">Assam</option>
+                <option value="4">Bihar</option>
+                <option value="5">Chandigarh</option>
+                <option value="6">Chhattisgarh</option>
+                <option value="7">Dadra and Nagar Haveli and Daman and Diu</option>
+                <option value="8">Delhi</option>
+                <option value="9">Goa</option>
+                <option value="10">Gujarat</option>
+                <option value="11">Haryana</option>
+                <option value="12">Himachal Pradesh</option>
+                <option value="13">Jammu and Kashmir</option>
+                <option value="14">Jharkhand</option>
+                <option value="15">Karnataka</option>
+                <option value="16">Kerala</option>
+                <option value="17">Ladakh</option>
+                <option value="18">Lakshadweep</option>
+                <option value="19">Madhya Pradesh</option>
+                <option value="20">Maharashtra</option>
+            </select>
+        </form>
+
+        <table class="tg">
+            <thead>
+                <tr>
+                    <th class="tg-0lax bor">region</th>
+                    <th class="tg-0pky bor">activeCases</th>
+                    <th class="tg-0pky bor">newInfected</th>
+                    <th class="tg-0pky bor">recovered</th>
+                    <th class="tg-0lax bor">recoveredNew</th>
+                    <th class="tg-73oq bor">deceased</th>
+                    <th class="tg-0lax bor">newDeceased</th>
+                    <th class="tg-0lax bor">totalInfected</th>
+
+                </tr>
+            </thead>
+            <tbody class="bor">
+                <tr>
+                    <td class="tg-0lax bor" id="state"></td>
+                    <td class="tg-0pky bor" id="s_ac"></td>
+                    <td class="tg-0pky bor" id="s_acn"></td>
+                    <td class="tg-0pky bor" id="s_rc"></td>
+                    <td class="tg-0lax bor" id="s_rcn"></td>
+                    <td class="tg-0lax bor" id="s_dt"></td>
+                    <td class="tg-0lax bor" id="s_dtn"></td>
+                    <td class="tg-0lax bor" id="s_pdt"></td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
